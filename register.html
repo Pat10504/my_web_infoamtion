@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>หน้า บันทึกประวัติ</title>
+</head>
+
+<body>
+
+  <h1>บันทึกข้อมูลส่วนตัว</h1>
+
+  <form action="/save_profile" method="post">
+
+    <div>
+      <label for="prefix">คำนำหน้า</label>
+      <select name="prefix" id="prefix">
+        <option value="mr">นาย</option>
+        <option value="mrs">นาง</option>
+        <option value="ms">นางสาว</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="fistname">ชื่อ</label>
+      <input type="text" name="fistname" id="fistname">
+    </div>
+
+    <div>
+      <label for="lastname">นามสกุล</label>
+      <input type="text" name="lastname" id="lastname">
+    </div>
+
+    <div>
+      <label for="age">อายุ</label>
+      <input type="number" name="age" id="age">
+    </div>
+
+    <div>
+      <label for="phone">เบอร์ติดต่อ</label>
+      <input type="tel" name="phone" id="phone">
+    </div>
+
+    <div>
+      <label for="university">สถานศึกษา</label>
+      <select name="university" id="university">
+        <option value="bu">มหาวิทยาลัยกรุงเทพ</option>
+        <option value="rsu">มหาวิทยาลัยรังสิต</option>
+        <option value="spu">มหาวิทยาลัยศรีปทุม</option>
+        <option value="utcc">มหาวิทยาลัยหอการค้าไทย</option>
+      </select>
+    </div>
+
+  </form>
+</body>
+
+</html>
