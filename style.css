@@ -8,13 +8,14 @@ body {
   align-items: center;
   margin: 0;
   height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .container{
-  backdrop-filter: blur(20px);
-  padding: 0.5em 2em 2em;
-  border: solid rgba(255,255,255,0.8);
-  box-shadow: 0px 0px 80px 10px rgba(255,255,255,0.5);
+  backdrop-filter: blur(10px);
+  padding: 0.5em 3em 2em;
+  border: solid rgba(255,255,255,1);
+  box-shadow: 0px 0px 100px 5px rgba(255,255,255,1);
   border-radius: 30px;
 }
 
@@ -36,9 +37,31 @@ body {
 .input{
   display: block;
   margin-top: 0.5em;
+  background-color: rgba(213, 233, 251,1);
+  border-style: none;
+  border-radius: 10px;
+  height: 2em;
 }
 
+.input:focus{
+  background-color: white;
+  outline: 2px solid white;
+}
 .btn{
   text-align: center;
   margin-top: 2em;
+}
+
+.btn button{
+  padding: 0.5em;
+  color: white;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgba(4, 132, 226,0.5);
+  cursor: pointer;
+}
+
+.btn button:focus {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  outline: none;
 }
