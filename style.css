@@ -1,0 +1,44 @@
+body {
+  background-image: url("img/backgroud.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+.container{
+  backdrop-filter: blur(20px);
+  padding: 0.5em 2em 2em;
+  border: solid rgba(255,255,255,0.8);
+  box-shadow: 0px 0px 80px 10px rgba(255,255,255,0.5);
+  border-radius: 30px;
+}
+
+.login{
+  text-align: center;
+  color: white;
+}
+
+.input-username{
+  margin-bottom: 1em;
+  color: white;
+}
+
+.input-password{
+  margin-bottom: 1em;
+  color: white;
+}
+
+.input{
+  display: block;
+  margin-top: 0.5em;
+}
+
+.btn{
+  text-align: center;
+  margin-top: 2em;
+}
